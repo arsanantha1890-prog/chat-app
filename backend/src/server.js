@@ -4,11 +4,10 @@ import express from "express";
 import cookieParser from "cookie-parser";
 
 import authRoutes from "./routes/auth.route.js";
-import messageRoutes from "./routes/messages.route.js";
+import messageRoutes from "./routes/message.route.js";
 import path from "path";
 import { connectDB } from "./lib/db.js";
 import { ENV } from "./lib/env.js";
-
 
 const app = express();
 const __dirname = path.resolve();
